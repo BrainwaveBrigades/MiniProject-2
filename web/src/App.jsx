@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage/LandingPage";
 import AuthPage from "./pages/Auth/AuthPage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AlumniDashboard from "./pages/alumni/AlumniDashboard";
@@ -10,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<AuthPage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/auth" element={<AuthPage />} />
 
         {/* Protected Routes */}
         <Route
